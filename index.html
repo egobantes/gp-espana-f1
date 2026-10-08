@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--
+        ACTIVIDAD: LMSGI02.1 - Lenguajes de Marcas en Entornos Web (HTML y CSS)
+        index.html (Página Principal del Gran Premio)
+        Estibaliz Gobantes Gómez_egobantes
+    -->
+    <meta charset="UTF-8">
+    <title>Gran Premio de España F1 - Portada</title>
+    <!-- Enlace a la hoja de estilos-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado página -->
+    <header>
+        <div class="contenedor-cabecera">
+            <a href="index.html" class="enlace-logo">
+                <!-- Imagen del logo con texto -->
+                <img src="imagenes/logo_f1.svg" alt="Logotipo oficial del Gran Premio de España de Fórmula 1"
+                    class="logo">
+            </a>
+            <div class="subtitulo-cabecera">
+                <p class="linea-titulo">CAMPEONATO MUNDIAL FIA DE FÓRMULA 1 &bull; TEMPORADA 2026</p>
+                <p class="linea-subtitulo">Circuit de Barcelona-Catalunya</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-navegacion">
+            <li class="elemento-menu"><a href="index.html" class="enlace-menu pagina-activa">Inicio</a></li>
+            <li class="elemento-menu"><a href="circuito.html" class="enlace-menu">Circuito y Horarios</a></li>
+            <li class="elemento-menu"><a href="contacto.html" class="enlace-menu">Entradas y Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <main>
+        <!-- Bienvenida y presentación -->
+        <article>
+            <h1>Gran Premio de España de Fórmula 1</h1>
+            <p>
+                Bienvenidos al portal web del <strong>Gran Premio de España de Fórmula 1</strong>, disputado en el
+                emblemático <em>Circuit de Barcelona-Catalunya</em> en Montmeló. Esta prueba reúne a los monoplazas
+                más avanzados del planeta, poniendo a prueba la aerodinámica, la gestión de neumáticos y la destreza
+                de los mejores pilotos del mundo.
+            </p>
+            <figure class="contenedor-imagen">
+                <img src="imagenes/haas_vf24.jpg"
+                    alt="Monoplaza Haas VF-24 de Fórmula 1 durante la presentación oficial de su decoración"
+                    class="imagen-centrada">
+                <figcaption>
+                    Monoplaza Haas VF-24 de Fórmula 1.
+                    <span class="fuente-imagen">Fuente: <a
+                            href="https://es.motorsport.com/f1/galleries/haas-decoracion-coche-vf24/1725/#68245788"
+                            target="_blank">Motorsport.com (Haas F1 Team)</a></span>
+                </figcaption>
+            </figure>
+        </article>
+
+        <!-- Sección LISTA-->
+        <section>
+            <h2>Aspectos Clave de la Competición</h2>
+            <p>El Gran Premio de Montmeló destaca en el calendario internacional por los siguientes elementos técnicos:
+            </p>
+            <ul class="lista-destacada">
+                <li><strong>Prueba de fuego aerodinámica:</strong> Su combinación de curvas rápidas y lentas permite
+                    evaluar la carga aerodinámica completa del chasis.</li>
+                <li><strong>Recta principal de 1.047 metros:</strong> Supera los 330 km/h en el punto de frenada antes
+                    de la curva 1.</li>
+                <li><strong>Degradación térmica:</strong> La abrasividad del asfalto catalán exige estrategias cuidadas
+                    con los compuestos de neumáticos Pirelli.</li>
+                <li><strong>Zonas DRS dobles:</strong> Diseñadas para favorecer adelantamientos limpios en la recta de
+                    meta y en la contrarrecta posterior.</li>
+            </ul>
+        </section>
+
+        <!-- Sección TABLA CLASIFICACIÓN -->
+        <section>
+            <h2>Clasificación Provisional de Pilotos Destacados</h2>
+            <p>A continuación se muestra el estado de los principales aspirantes al podio en la presente edición:</p>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Piloto</th>
+                        <th>Escudería</th>
+                        <th>Nacionalidad</th>
+                        <th>Puntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Max Verstappen</td>
+                        <td>Red Bull Racing</td>
+                        <td>Países Bajos</td>
+                        <td>125</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lando Norris</td>
+                        <td>McLaren F1 Team</td>
+                        <td>Reino Unido</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Charles Leclerc</td>
+                        <td>Scuderia Ferrari</td>
+                        <td>Mónaco</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Fernando Alonso</td>
+                        <td>Aston Martin Aramco</td>
+                        <td>España</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carlos Sainz</td>
+                        <td>Williams Racing</td>
+                        <td>España</td>
+                        <td>64</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ENLACES  -->
+        <section>
+            <h2>Enlaces y Recursos Externos</h2>
+            <div class="tarjeta-enlaces">
+                <p>Para profundizar en el reglamento, telemetría y noticias de última hora, consulta las siguientes
+                    fuentes autorizadas:</p>
+                <ul class="lista-destacada">
+                    <li>
+                        <a href="https://www.formula1.com" target="_blank">
+                            Sitio Web Oficial de la Fórmula 1 (Formula1.com) &rarr;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fia.com" target="_blank">
+                            Federación Internacional del Automóvil (FIA) &rarr;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.circuitcat.com" target="_blank">
+                            Circuit de Barcelona-Catalunya &rarr;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="contenedor-pie">
+            <div class="creditos-pie">
+                <p>&copy; 2026 - Gran Premio de España F1 | LMSGI02 - BirtLH</p>
+                <p><strong>Estibaliz Gobantes Gómez </strong>_egobantes</p>
+            </div>
+            <div class="enlaces-pie">
+                <p><a href="index.html">Volver arriba &uarr;</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

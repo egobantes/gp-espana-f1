@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--
+        ACTIVIDAD: LMSGI02.1 - Lenguajes de Marcas en Entornos Web (HTML y CSS)
+        contacto.html (Entradas y Formulario de Contacto)
+        Estibaliz Gobantes Gómez_egobantes
+    -->
+    <meta charset="UTF-8">
+    <title>Gran Premio de España F1 - Entradas y Contacto</title>
+    <!-- Enlace a la hoja de estilos-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado general -->
+    <header>
+        <div class="contenedor-cabecera">
+            <a href="index.html" class="enlace-logo">
+                <img src="imagenes/logo_f1.svg" alt="Logotipo oficial del Gran Premio de España de Fórmula 1"
+                    class="logo">
+            </a>
+            <div class="subtitulo-cabecera">
+                <p class="linea-titulo">CAMPEONATO MUNDIAL FIA DE FÓRMULA 1 &bull; TEMPORADA 2026</p>
+                <p class="linea-subtitulo">Circuit de Barcelona-Catalunya</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-navegacion">
+            <li class="elemento-menu"><a href="index.html" class="enlace-menu">Inicio</a></li>
+            <li class="elemento-menu"><a href="circuito.html" class="enlace-menu">Circuito y Horarios</a></li>
+            <li class="elemento-menu"><a href="contacto.html" class="enlace-menu pagina-activa">Entradas y Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Venta de entradas -->
+        <article>
+            <h1>Entradas y Localidades para el Gran Premio</h1>
+            <p>
+                Disfruta de la máxima emoción del motor en directo en el Circuit de Barcelona-Catalunya.
+                Disponemos de diversas modalidades de abono diseñadas para adaptarse a todos los aficionados,
+                desde asientos en la Tribuna Principal frente a los garajes de boxes hasta la emoción natural
+                de las colinas de pelousse.
+            </p>
+        </article>
+
+        <!-- Lista de servicios -->
+        <section>
+            <h2>Servicios Incluidos con tu Entrada</h2>
+            <ul class="lista-destacada">
+                <li><strong>Acceso a zonas de gradas y pelousse:</strong> Visión panorámica de las mejores frenadas del
+                    circuito.</li>
+                <li><strong>Pantallas gigantes de televisión:</strong> Retransmisión íntegra de la señal de carrera con
+                    tiempos en directo.</li>
+                <li><strong>Pit Walk del jueves (sujeto a disponibilidad):</strong> Visita a la calle de talleres para
+                    ver el trabajo de los mecánicos.</li>
+                <li><strong>Áreas gastronómicas y Fan Zone:</strong> Actuaciones en directo, simuladores de Fórmula 1 y
+                    tiendas de merchandising oficial.</li>
+            </ul>
+        </section>
+
+        <!-- TABLA tarifas -->
+        <section>
+            <h2>Tarifas Orientativas por Tribuna</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Zona del Circuito</th>
+                        <th>Visibilidad</th>
+                        <th>Modalidad</th>
+                        <th>Precio Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tribuna Principal (Recta de Meta)</td>
+                        <td>Boxes, Salida, Podio</td>
+                        <td>Abono 3 Días</td>
+                        <td>495 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>Tribuna G (Curvas 12 y 13)</td>
+                        <td>Zona de frenada y estadio</td>
+                        <td>Abono 3 Días</td>
+                        <td>290 &euro;</td>
+                    </tr>
+                    <tr>
+                        <td>Pelousse (Césped general)</td>
+                        <td>Áreas verdes del trazado</td>
+                        <td>Abono 3 Días</td>
+                        <td>140 &euro;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section>
+            <h2>Formulario Oficial de Contacto y Reserva</h2>
+            <p>Envía tus datos mediante el siguiente formulario. Los campos marcados con (*) son obligatorios.</p>
+
+            <form action="mailto:entradas-f1@birt.eus" method="post" enctype="text/plain" class="formulario-contacto"
+                id="formContacto">
+
+                <!-- Datos de contacto -->
+                <fieldset>
+                    <legend>1. Datos Personales</legend>
+
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre completo (*):</label>
+                        <input type="text" id="nombre" name="Nombre" placeholder="Ej: María Gómez" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="correo">Correo electrónico (*):</label>
+                        <input type="email" id="correo" name="Email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="text" id="telefono" name="Telefono" placeholder="Ej: 600123456">
+                    </div>
+                </fieldset>
+
+                <!-- 2. Preferencias Reserva -->
+                <fieldset>
+                    <legend>2. Selección de Tribuna y Pase</legend>
+
+                    <div class="campo-formulario">
+                        <label for="zona">Zona de acceso elegida:</label>
+                        <select id="zona" name="Zona">
+                            <option value="principal">Tribuna Principal (Boxes y Meta)</option>
+                            <option value="tribuna_g">Tribuna G (Zona Estadio)</option>
+                            <option value="tribuna_f">Tribuna F (Fin de Recta)</option>
+                            <option value="pelousse">Pelousse (Admisión General)</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label>Formato de las entradas:</label>
+                        <div class="grupo-radio">
+                            <label class="opcion-radio">
+                                <input type="radio" name="FormatoEntrada" value="Digital" checked> Digital (e-Ticket en el móvil)
+                            </label>
+                            <label class="opcion-radio">
+                                <input type="radio" name="FormatoEntrada" value="Fisico"> Acreditación física (envío postal)
+                            </label>
+                            <label class="opcion-radio">
+                                <input type="radio" name="FormatoEntrada" value="Taquilla"> Recogida en taquilla del circuito
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label class="opcion-casilla">
+                            <input type="checkbox" id="newsletter" name="Newsletter" value="Si" checked>
+                            Deseo recibir el boletín oficial de noticias y alertas del Gran Premio.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!--3: Observaciones -->
+                <fieldset>
+                    <legend>3. Mensaje o Consulta Específica</legend>
+
+                    <div class="campo-formulario">
+                        <label for="mensaje">Comentarios / Requisitos especiales de movilidad:</label>
+                        <textarea id="mensaje" name="Mensaje" rows="4"
+                            placeholder="Escribe aquí cualquier indicación o duda respecto a tu entrada..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Botones formulario-->
+                <div class="botones-formulario">
+                    <button type="reset" class="boton boton-secundario">Limpiar Formulario</button>
+                    <button type="submit" class="boton boton-primario">ENVIAR</button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Sección de enlaces -->
+        <section>
+            <h2>Transporte y Accesos Oficiales</h2>
+            <div class="tarjeta-enlaces">
+                <p>Planifica tu llegada al circuito en transporte colectivo:</p>
+                <ul class="lista-destacada">
+                    <li>
+                        <a href="https://rodalies.gencat.cat" target="_blank">
+                            Horarios de Trenes de Cercanías Renfe / Rodalies (Línea R2 Norte a Montmeló) &rarr;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.sagales.com" target="_blank">
+                            Autobuses Especiales Sagalés desde Barcelona Centro al Circuito &rarr;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="contenedor-pie">
+            <div class="creditos-pie">
+                <p>&copy; 2026 - Gran Premio de España F1 | LMSGI02 - BirtLH</p>
+                <p><strong>Estibaliz Gobantes Gómez </strong>_egobantes</p>
+            </div>
+            <div class="enlaces-pie">
+                <p><a href="contacto.html">Volver arriba &uarr;</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

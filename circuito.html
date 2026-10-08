@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--
+        ACTIVIDAD: LMSGI02.1 - Lenguajes de Marcas en Entornos Web (HTML y CSS)
+        circuito.html (Ficha Técnica y Horarios del Circuito)
+        Estibaliz Gobantes Gómez_egobantes
+    -->
+    <meta charset="UTF-8">
+    <title>Gran Premio de España F1 - Circuito y Horarios</title>
+    <!-- Enlace a la hoja de estilos-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado general -->
+    <header>
+        <div class="contenedor-cabecera">
+            <a href="index.html" class="enlace-logo">
+                <img src="imagenes/logo_f1.svg" alt="Logotipo oficial del Gran Premio de España de Fórmula 1"
+                    class="logo">
+            </a>
+            <div class="subtitulo-cabecera">
+                <p class="linea-titulo">CAMPEONATO MUNDIAL FIA DE FÓRMULA 1 &bull; TEMPORADA 2026</p>
+                <p class="linea-subtitulo">Circuit de Barcelona-Catalunya</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu-navegacion">
+            <li class="elemento-menu"><a href="index.html" class="enlace-menu">Inicio</a></li>
+            <li class="elemento-menu"><a href="circuito.html" class="enlace-menu pagina-activa">Circuito y Horarios</a>
+            </li>
+            <li class="elemento-menu"><a href="contacto.html" class="enlace-menu">Entradas y Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Artículo de presentación del circuito y trazado -->
+        <article>
+            <h1>Trazado del Circuit de Barcelona-Catalunya</h1>
+            <p>
+                Inaugurado en 1991 con motivo de los Juegos Olímpicos de Barcelona 1992, el circuito de Montmeló
+                es uno de los trazados más conocidos por los ingenieros de automovilismo. Su trazado actual cuenta
+                con 14 curvas tras la supresión de la antigua chicane del tercer sector, recuperando el flujo
+                veloz original hacia la recta de meta.
+            </p>
+
+            <figure class="contenedor-imagen">
+                <img src="imagenes/circuito_montmelo.svg"
+                    alt="Plano técnico con las curvas, recta de meta y zonas DRS del Circuit de Barcelona-Catalunya"
+                    class="imagen-centrada">
+                <figcaption>
+                    Esquema del trazado: 4.657 metros y 14 curvas.
+                    <span class="fuente-imagen">Fuente: <a
+                            href="https://commons.wikimedia.org/wiki/File:Formula1_Circuit_Catalunya_2021.svg"
+                            target="_blank">Wikimedia Commons (CC BY-SA 3.0)</a></span>
+                </figcaption>
+            </figure>
+        </article>
+
+        <!-- Sección LISTA carreras -->
+        <section>
+            <h2>Récords Históricos en Carrera</h2>
+            <p>Pilotos que han marcado los tiempos más rápidos registrados en el actual diseño del circuito:</p>
+
+            <ol class="lista-destacada">
+                <li><strong>Max Verstappen (Red Bull Racing):</strong> 1:16.330 (Vuelta rápida absoluta en carrera,
+                    2023).</li>
+                <li><strong>Lando Norris (McLaren):</strong> 1:16.712 (Segunda mejor marca registrada, 2024).</li>
+                <li><strong>Lewis Hamilton (Mercedes-AMG):</strong> 1:16.921 (Tercer mejor registro cronometrado, 2023).
+                </li>
+                <li><strong>Sergio Pérez (Red Bull Racing):</strong> 1:17.150 (Cuarta posición en registros oficiales).
+                </li>
+            </ol>
+        </section>
+
+        <!-- Sección TABLA horarios-->
+        <section>
+            <h2>Programa y Horarios Oficiales del Fin de Semana</h2>
+            <p>Cronograma detallado de todas las tandas y sesiones competitivas programadas para el Gran Premio:</p>
+
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Sesión Oficial</th>
+                        <th>Hora Local (CEST)</th>
+                        <th>Duración Estimada</th>
+                        <th>Objetivo de la Sesión</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Entrenamientos Libres 1 (FP1)</td>
+                        <td>13:30 - 14:30</td>
+                        <td>60 minutos</td>
+                        <td>Ajustes iniciales de reglajes aerodinámicos y puesta a punto.</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Entrenamientos Libres 2 (FP2)</td>
+                        <td>17:00 - 18:00</td>
+                        <td>60 minutos</td>
+                        <td>Simulación de ritmo de carrera y degradación de neumáticos blandos.</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Entrenamientos Libres 3 (FP3)</td>
+                        <td>12:30 - 13:30</td>
+                        <td>60 minutos</td>
+                        <td>Ensayos de vueltas rápidas a baja carga de combustible.</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Sesión de Clasificación (Q1, Q2, Q3)</td>
+                        <td>16:00 - 17:00</td>
+                        <td>60 minutos</td>
+                        <td>Determinación de la parrilla de salida oficial y Pole Position.</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Gran Premio de España (Carrera)</td>
+                        <td>15:00 - 17:00</td>
+                        <td>66 vueltas (máx. 2h)</td>
+                        <td>Competición principal con asignación de puntos del mundial.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de enlaces externos -->
+        <section>
+            <h2>Enlaces y Recursos de Interés</h2>
+            <div class="tarjeta-enlaces">
+                <p>Consulta información meteorológica en tiempo real y guías de neumáticos:</p>
+                <ul class="lista-destacada">
+                    <li>
+                        <a href="https://www.aemet.es" target="_blank">
+                            Previsión Meteorológica AEMET para Montmeló &rarr;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pirelli.com/tyres/en-ww/motorsport/f1" target="_blank">
+                            Guía Técnica de Compuestos Pirelli F1 &rarr;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página-->
+    <footer>
+        <div class="contenedor-pie">
+            <div class="creditos-pie">
+                <p>&copy; 2026 - Gran Premio de España F1 | LMSGI02 - BirtLH</p>
+                <p><strong>Estibaliz Gobantes Gómez </strong>egobantes</p>
+            </div>
+            <div class="enlaces-pie">
+                <p><a href="circuito.html">Volver arriba &uarr;</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
