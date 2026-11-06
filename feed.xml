@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Gran Premio de España F1 - Noticias y Novedades</title>
+        <link>https://egobantes.github.io/gp-espana-f1/index.html</link>
+        <description>Canal RSS oficial con las últimas novedades del Gran Premio de España de Fórmula 1 en el Circuit de Barcelona-Catalunya (LMSGI04 - BirtLH - egobantes).</description>
+        <language>es-ES</language>
+        <atom:link href="https://egobantes.github.io/gp-espana-f1/feed.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>Actualización de horarios oficiales y zonas DRS del Circuito de Montmeló</title>
+            <link>https://egobantes.github.io/gp-espana-f1/circuito.html</link>
+            <description>Ya están disponibles los horarios definitivos de entrenamientos libres, clasificación y carrera, junto con el mapa técnico de las 14 curvas del trazado.</description>
+            <pubDate>Fri, 06 Nov 2026 17:00:00 +0100</pubDate>
+            <guid>https://egobantes.github.io/gp-espana-f1/circuito.html</guid>
+        </item>
+
+        <item>
+            <title>Apertura de venta de entradas y formulario de reserva para Tribunas y Pelouse</title>
+            <link>https://egobantes.github.io/gp-espana-f1/contacto.html</link>
+            <description>Consulta las nuevas tarifas de abonos de 3 días para Tribuna Principal, Tribuna curvas y Pelouse Joven, y realiza tu solicitud desde nuestro formulario de contacto.</description>
+            <pubDate>Fri, 06 Nov 2026 18:00:00 +0100</pubDate>
+            <guid>https://egobantes.github.io/gp-espana-f1/contacto.html</guid>
+        </item>
+    </channel>
+</rss>

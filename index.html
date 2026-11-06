@@ -3,14 +3,16 @@
 
 <head>
     <!--
-        ACTIVIDAD: LMSGI02.1 - Lenguajes de Marcas en Entornos Web (HTML y CSS)
-        index.html (Página Principal del Gran Premio)
+        ACTIVIDAD: LMSGI02.1 y LMSGI04.1 - Lenguajes de Marcas en Entornos Web y Sindicación RSS
+        index.html (Página Principal del Gran Premio con enlace a feed.xml)
         Estibaliz Gobantes Gómez_egobantes
     -->
     <meta charset="UTF-8">
     <title>Gran Premio de España F1 - Portada</title>
     <!-- Enlace a la hoja de estilos-->
     <link rel="stylesheet" href="estilos/estilos.css">
+    <!-- Autodescubrimiento del canal RSS 2.0 (LMSGI04) -->
+    <link rel="alternate" type="application/rss+xml" title="Canal RSS - Gran Premio de España F1" href="feed.xml">
 </head>
 
 <body>
@@ -35,6 +37,7 @@
             <li class="elemento-menu"><a href="index.html" class="enlace-menu pagina-activa">Inicio</a></li>
             <li class="elemento-menu"><a href="circuito.html" class="enlace-menu">Circuito y Horarios</a></li>
             <li class="elemento-menu"><a href="contacto.html" class="enlace-menu">Entradas y Contacto</a></li>
+            <li class="elemento-menu"><a href="feed.xml" class="enlace-menu" target="_blank">📡 Feed RSS</a></li>
         </ul>
     </nav>
 
@@ -48,6 +51,9 @@
                 emblemático <em>Circuit de Barcelona-Catalunya</em> en Montmeló. Esta prueba reúne a los monoplazas
                 más avanzados del planeta, poniendo a prueba la aerodinámica, la gestión de neumáticos y la destreza
                 de los mejores pilotos del mundo.
+            </p>
+            <p>
+                <strong>📡 Sindicación de contenidos (RSS):</strong> Suscríbete a las últimas novedades de nuestro sitio web a través de nuestro <a href="feed.xml" target="_blank"><strong>Canal RSS (feed.xml)</strong></a>.
             </p>
             <figure class="contenedor-imagen">
                 <img src="imagenes/haas_vf24.jpg"
@@ -141,6 +147,11 @@
                     fuentes autorizadas:</p>
                 <ul class="lista-destacada">
                     <li>
+                        <a href="feed.xml" target="_blank">
+                            📡 Canal de Sindicación RSS 2.0 del Gran Premio (feed.xml) &rarr;
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://www.formula1.com" target="_blank">
                             Sitio Web Oficial de la Fórmula 1 (Formula1.com) &rarr;
                         </a>
@@ -165,11 +176,11 @@
     <footer>
         <div class="contenedor-pie">
             <div class="creditos-pie">
-                <p>&copy; 2026 - Gran Premio de España F1 | LMSGI02 - BirtLH</p>
+                <p>&copy; 2026 - Gran Premio de España F1 | LMSGI02 &amp; LMSGI04 - BirtLH</p>
                 <p><strong>Estibaliz Gobantes Gómez </strong>_egobantes</p>
             </div>
             <div class="enlaces-pie">
-                <p><a href="index.html">Volver arriba &uarr;</a></p>
+                <p><a href="feed.xml" target="_blank">📡 RSS</a> | <a href="index.html">Volver arriba &uarr;</a></p>
             </div>
         </div>
     </footer>
